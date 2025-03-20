@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Digimon Finder</title>
+</head>
+<body>
+  
+  
+<div id="homeScreen" class="container">
+    <div class="logo-container">
+        <img id="digimonLogo" src="./images/logo.webp" alt="Digimon Logo">
+    </div>
+    <h2>Pesquise seus digimons favoritos por nome ou pelo level!</h2>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="buscar">
+        <button id="searchButton">Buscar</button>
+    </div>
+    <p>Clique aqui para ver todos os Digimons!</p>
+    <button id="showAllButton">Mostrar todos</button>
+</div>
+    
+    
+    <div id="resultsScreen" class="container hidden">
+        <input type="text" id="searchInputResults" placeholder="buscar">
+        <button id="searchButtonResults">Buscar</button>
+        <button id="backButton">Voltar</button>
+        <div id="results" class="grid-container"></div>
+    </div>
+    
+    <div id="digimonModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+</body>
+</html>
